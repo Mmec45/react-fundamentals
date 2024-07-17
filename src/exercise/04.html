@@ -11,10 +11,18 @@
 
     // 🐨 use that function in place of the divs below with:
     // 💰 {message({children: 'Hello World'})} {message({children: 'Goodbye World'})}
+    function message () {
+      return(
+        <>
+        <div className="message">{message({children: 'Hello World'})}</div>
+        <div className="message">{message({children: 'Hello World'})}</div>
+        </>
+      )
+    };
+    
     const element = (
       <div className="container">
-        <div className="message">Hello World</div>
-        <div className="message">Goodbye World</div>
+        {message({ch})}
       </div>
     )
 
